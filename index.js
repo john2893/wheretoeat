@@ -27,6 +27,9 @@ yelp.query('businesses/search', params)
     var d = JSON.parse(data)
     // console.log(d["businesses"])
     console.log(d["businesses"][0].name)
+    dataYelp
+    const t = d["businesses"][0].name;
+    document.getElementById('dataYelp').textContent = t;
         
     
         
@@ -36,3 +39,7 @@ yelp.query('businesses/search', params)
   // Failure
   console.log(err);
 });  
+
+function onClick() {
+    alert ("hellow")
+}
