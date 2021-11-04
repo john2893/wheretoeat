@@ -52,7 +52,7 @@
   <!-- Example single danger button -->
   <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="City Name" aria-label="City Name" aria-describedby="button-addon2">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+    <button onclick=onClick() class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
   </div>
 
   <div class="row mb-2">
@@ -158,7 +158,11 @@
     <a href="#">Back to top</a>
   </p>
 </footer>
-
+  <script>
+    function onClick() {
+      alert ("hellow")
+    }
+  </script>
 
     
   </body>
