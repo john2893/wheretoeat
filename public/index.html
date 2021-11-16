@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <h1> where to eat?</h1>
+    <p>Hotel: <span id="name"></span></p>
+    
+    <script>
+      const options = {
+        headers: { 
+        'Accept': 'application/json'
+       },
+      }
+      async function test() {
+        const response = await fetch('/', headers);
+        const data = await response.json()
+        console.log(data)
+      }
+      test()
+    </script>
+  </body>
+</html>
